@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #222;
+}
+
+/* ===== HEADER 50/50 ===== */
+header {
+  background: url('konie-header.jpg') center/cover no-repeat;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+}
+
+.header-left,
+.header-right {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-left {
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header-right {
+  /* miejsce na przyszłe logo */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+header p {
+  color: #e0e0e0;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #fff;
+  color: #2e7d32;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== SEKCJA GŁÓWNA ===== */
+.flex-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flex-section > div {
+  flex: 1 1 400px;
+  min-width: 0;
+}
+
+iframe {
+  width: 100%;
+  height: 650px;
+  border: 0;
+  border-radius: 10px;
+  display: block;
+}
+
+h2 {
+  border-bottom: 3px solid #2e7d32;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ===== IKONY ===== */
+.icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: #2e7d32;
+}
+
+/* ===== KONTAKT – WYŚRODKOWANY ===== */
+.kontakt {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.kontakt-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 14px 0;
+  font-size: 1.05em;
+}
+
+.kontakt-item a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.kontakt-item a:hover {
+  text-decoration: underline;
+}
+
+/* ===== USŁUGI ===== */
+.usluga {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .header-left,
+  .header-right {
+    flex: none;
+    width: 100%;
+  }
+
+  .header-right {
+    min-height: 120px; /* trochę miejsca na przyszłe logo */
+  }
+
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  .flex-section {
+    padding: 20px 15px;
+    gap: 25px;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}
