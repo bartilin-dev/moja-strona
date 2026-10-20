@@ -1,37 +1,22 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gabinet Weterynaryjny Gołębie - Anna Rutkiewicz</title>
-<style>
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #222; }
-header { background: url('konie-header.jpg') center/cover no-repeat; color: #fff; padding: 120px 120px 120px 160px; text-align: left; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
-header h1 { margin: 0; font-size: 2.2em; }
-header p { color: #e0e0e0; margin-top: 10px; }
-.btn { display: inline-block; margin-top: 20px; padding: 12px 28px; background: #fff; color: #2e7d32; border-radius: 30px; text-decoration: none; font-weight: bold; }
-.flex-section { display: flex; flex-wrap: wrap; gap: 20px; padding: 40px 20px; max-width: 1000px; margin: 0 auto; }
-.flex-section > div { flex: 1 1 400px; min-width: 0; }
-iframe { width: 100%; height: 650px; border: 0; border-radius: 10px; display: block; }
-h2 { border-bottom: 3px solid #2e7d32; padding-bottom: 8px; }
-.usluga { background: #fff; padding: 15px; border-radius: 8px; margin-bottom: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-.kontakt { background: #fff; padding: 15px; border-radius: 8px; margin-bottom: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-footer { text-align: center; padding: 20px; color: #888; }
-@media (max-width: 600px) {
-  header { padding: 80px 20px; }
-  header h1 { font-size: 1.6em; }
-  .flex-section { padding: 20px 15px; gap: 25px; }
-  iframe { height: 250px; }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabinet Weterynaryjny Gołębie - Anna Rutkiewicz</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
-  <h1>Gabinet Weterynaryjny Gołębie</h1>
-  <p>Anna Rutkiewicz — opieka weterynaryjna od 2004 roku</p>
-  <a href="#kontakt" class="btn">Kontakt</a>
+  <div class="header-left">
+    <h1>Gabinet Weterynaryjny Gołębie</h1>
+    <p>Anna Rutkiewicz — opieka weterynaryjna od 2004 roku</p>
+    <a href="#kontakt" class="btn">Kontakt</a>
+  </div>
+  <div class="header-right">
+    <!-- tu w przyszłości logo -->
+  </div>
 </header>
 
 <div class="flex-section">
@@ -41,13 +26,38 @@ footer { text-align: center; padding: 20px; color: #888; }
   </div>
 
   <div id="kontakt">
-    <h2>Kontakt</h2>
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+        <polyline points="22,6 12,13 2,6"/>
+      </svg>
+      Kontakt
+    </h2>
+
     <div class="kontakt">
-      <p>
-        Telefon: <a href="tel:501516680">501 516 680</a><br>
-        Adres: Gołębie 7, 06-150 Świercze<br>
-        Email: <a href="mailto:anna.w.rutkiewicz@gmail.com">anna.w.rutkiewicz@gmail.com</a>
-      </p>
+      <div class="kontakt-item">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+          <line x1="12" y1="18" x2="12.01" y2="18"/>
+        </svg>
+        <a href="tel:501516680">501 516 680</a>
+      </div>
+
+      <div class="kontakt-item">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <span>Gołębie 7, 06-150 Świercze</span>
+      </div>
+
+      <div class="kontakt-item">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        <a href="mailto:anna.w.rutkiewicz@gmail.com">anna.w.rutkiewicz@gmail.com</a>
+      </div>
     </div>
 
     <h2>Usługi</h2>
@@ -73,5 +83,6 @@ footer { text-align: center; padding: 20px; color: #888; }
 <footer>
   &copy; 2026 Gabinet Weterynaryjny Gołębie
 </footer>
+
 </body>
 </html>
