@@ -1,2 +1,2 @@
-# moja-strona
+# projekt
 nauka, testowanie, 
